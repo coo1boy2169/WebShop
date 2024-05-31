@@ -1,0 +1,435 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.jetbrains-mono-300{
+  font-family: "JetBrains Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+
+html{
+    font-size: 62.5%;
+}
+body{
+    font-size: 2rem;
+    background-color: white;
+}
+
+.header{
+
+    display: flex;
+    align-items: center;
+    gap: 5rem;
+    overflow: hidden;
+}
+.logo{
+  color: black;
+   text-decoration: none;
+    background: rgba(255, 255, 255, 0.3);
+    display: flex;
+    align-items:start;
+    justify-content: start;
+    margin: 1rem;
+    padding: 1rem;
+    font-size: 3rem;
+    font-family: "JetBrains Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal; 
+    width: 500rem;
+}
+
+.logo:hover{
+    cursor: pointer;
+}
+
+.searchbar{
+  display: flex;
+  justify-content: flex-start;
+  position: relative;
+  margin: 0 auto;
+  width: 60%;
+}
+
+.searchbar__input{
+  border: none;
+  height: 5rem;
+  width: 30rem;
+  font-size: 2rem;
+  border:  0.2rem solid rgb(233, 195, 183);
+  border-radius: 0.5rem;
+  padding: 2rem 4rem;
+  box-shadow:0 0.5rem 1rem 0.5rem rgba(255, 213, 116, 0.2) ;
+  padding-right:5rem ;
+}
+
+.searchbar__glass{
+  width: 4rem;
+  height: 10%;
+  background-color: rgba(233,195,183,1);
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 200%;
+  color: white;
+  position: absolute;
+  border-top-right-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+  left: 28rem;
+}
+
+#shoppingcart{
+  text-decoration: none;
+   color: black;
+    margin-right:  1rem; ;
+   display: flex;
+   justify-content: end;
+   align-items: flex-end;
+   font-size: 3rem;
+  width: 10rem;
+  overflow: hidden;
+  
+}
+
+
+#shoppingcart:hover{
+    cursor: pointer;
+}
+
+#user{
+    font-size: 3rem;
+    color: black;
+    list-style: none;
+    text-decoration: none;
+    
+}
+
+#user:hover{
+    cursor: pointer;
+}
+
+
+
+header>button{
+    
+    font-size: 2rem;
+    font-family: "JetBrains Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal; 
+    border: none;
+    background-color: white;
+    
+}
+
+
+.About , .Location{
+    opacity: 0.7;
+}
+
+.About:hover{
+    cursor: pointer;
+}
+
+.Location:hover{
+    cursor: pointer;
+}
+
+.Heroimg{
+    width: 100%;
+    height: 100%;
+   
+}
+
+
+.image-container {
+    overflow: hidden;
+    position: relative;
+    display: inline-block;
+  }
+
+  .image-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 11%; /* Adjust the height of the fade as needed */
+    background: linear-gradient(to top   , rgba(255, 214, 152, 0), rgb(233,195,183,0.4)); 
+  }
+
+  .collectionList {
+    list-style: none;
+    display: flex;
+    gap: 4rem;
+    flex-wrap: wrap;
+    
+
+}
+
+
+.image-text {
+    margin: 3rem;
+    border-radius: 1rem;
+    padding: 1rem;
+   opacity: 1;
+   background-color:rgba(233,195,183,0.4);
+    font-family: "JetBrains Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal; 
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    color: whitesmoke;
+    font-size: 5rem;
+    font-weight: bold;
+    text-align: center;
+  }
+
+
+a>button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    border: none;
+    background-color: black;
+}
+
+
+  .cover-text>a{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "JetBrains Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal; 
+    position: absolute;
+    border: none;
+    color: white;
+    background-color: black;
+    width: 10rem;
+    height: 5rem;
+  }
+
+
+
+
+  .cover-text-big>p{
+    opacity: 0.7;
+    font-size: 10rem;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "JetBrains Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 25rem;
+    
+  }
+
+
+  .cover-text-big{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .cover-text-big>a{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "JetBrains Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal; 
+    position: absolute;
+    border: none;
+    color: white;
+    background-color: black;
+    margin-top: 50rem;
+    width: 50rem;
+    height: 5rem;
+  }
+
+  button:hover{
+    cursor: pointer;
+  }
+
+  .cover-text>p{
+    font-family: "JetBrains Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    font-size: 5rem;
+    position: relative;
+    opacity: 0.7;
+  }
+
+ .cover-text>a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "JetBrains Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal; 
+    border: none;
+    width: 12rem;
+    height: 5rem;
+    position: absolute; 
+
+  
+ }
+
+
+
+ .cover{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    position: relative;
+    bottom: calc(100% + 5px);
+    height: 100%;
+  background-color:rgba(233,195,183,0.4);
+
+ }
+  .collectionsimg>img{
+
+    width: 100%;;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .collectionsimg{
+    
+    object-fit:none;
+    width: 40rem;
+    height: 60rem;
+    flex-shrink: 1;
+    flex-grow: 1;
+    
+  }
+
+
+
+.collections  {
+    width: 100%;
+    padding: 4rem;
+    
+}
+  
+.nav{
+    opacity: 0.7;
+    display: flex;
+    align-items: flex-end;
+    justify-content: end;
+  width: 100%;
+  height: 5rem;
+  background-color:rgb(233,195	,183);
+}
+
+.nav>button{
+    padding-right: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    font-size: 2rem;
+    font-family: "JetBrains Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal; 
+    border: none;
+    background-color: rgb(233,195	,183);
+    height: 5rem;
+    
+}
+  
+ 
+.footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20rem;
+    font-size: 2rem;
+    font-family: "JetBrains Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    background-color: rgb(233,195,183);
+    width: 100%;
+    height: 25rem;
+    padding: 5rem;
+    
+}
+
+
+.footer>h1{
+    display: flex;
+    align-items: end;
+    justify-content: end    ;
+}
+
+.Maps{
+  
+}
+
+.footer>ul{
+  display: flex;
+  gap: 3rem ;
+  list-style: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+   font-size: 1.5rem;
+   margin-left:  30rem;
+}
+
+
+.shoppingkartinfo{
+  color: white;
+  flex-direction: column;
+  margin: 5rem 0rem ;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgb(60,60	,60);
+  width: 100%;
+  height: 15rem;
+  font-size: 2rem;
+  font-family: "JetBrains Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.shoppingkartinfo>a {
+    text-decoration: none;
+    color: white;
+}
+
+.shoppingkartinfo>a:hover{
+  text-decoration: underline;
+}
+
+

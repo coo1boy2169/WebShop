@@ -1,0 +1,353 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.jetbrains-mono-300{
+  font-family: "JetBrains Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+
+html{
+    font-size: 62.5%;
+}
+body{
+    font-size: 2rem;
+    background-color: white;
+}
+
+.header{
+
+    display: flex;
+    align-items: center;
+    gap: 5rem;
+    overflow: hidden;
+}
+.logo{
+  color: black;
+   text-decoration: none;
+    background: rgba(255, 255, 255, 0.3);
+    display: flex;
+    align-items:start;
+    justify-content: start;
+    margin: 1rem;
+    padding: 1rem;
+    font-size: 3rem;
+    font-family: "JetBrains Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal; 
+    width: 500rem;
+}
+
+.logo:hover{
+    cursor: pointer;
+}
+
+#shoppingcart{
+    text-decoration: none;
+     color: black;
+      margin-right:  1rem; ;
+     display: flex;
+     justify-content: end;
+     align-items: flex-end;
+     font-size: 3rem;
+    width: 10rem;
+    overflow: hidden;
+    
+  }
+  
+  
+  #shoppingcart:hover{
+      cursor: pointer;
+  }
+
+#user{
+    font-size: 3rem;
+    
+}
+
+#user:hover{
+    cursor: pointer;
+}
+
+
+
+header>button{
+    
+    font-size: 2rem;
+    font-family: "JetBrains Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal; 
+    border: none;
+    background-color: white;
+    
+}
+
+  
+.nav{
+    opacity: 0.7;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  width: 100%;
+  height: 5rem;
+  background-color:rgb(233,195	,183);
+}
+
+.nav>a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    font-family: "JetBrains Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal; 
+    border: none;
+    background-color: rgb(233,195	,183);
+    height: 5rem;
+    color: black;
+    text-decoration: none;
+    border: solid black 0.1rem;
+    width: 35rem;
+    
+}
+
+
+
+
+.About , .Location{
+    opacity: 0.7;
+}
+
+.About:hover{
+    cursor: pointer;
+}
+
+.Location:hover{
+    cursor: pointer;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.add{
+    margin-bottom: 10rem;
+    padding: 1rem 2rem;
+    font-size: 1.6rem;
+    cursor: pointer;
+    border: none;
+   transition: 3s;
+   background-color: black;
+   color: white;
+   opacity: 0.8;
+   border: solid lightpink 0.1rem;
+}
+
+button , #openModalBtn{
+    margin-bottom: 10rem;
+    padding: 1rem 2rem;
+    font-size: 1.6rem;
+    cursor: pointer;
+    border: none;
+   transition: 3s;
+   background-color: black;
+   color: white;
+   opacity: 0.8;
+   border: solid lightpink 0.1rem;
+}
+
+
+.div__buttons{
+    display: flex;
+    gap: 20rem;
+}
+
+
+/* The Modal (background) */
+.modal , .modal1 , .modal2 , .modal3 {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content , .modal-content1 , .modal-content2, .modal-content3{
+    background-color: #fefefe;
+    margin: 5% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 50%; /* Could be more or less, depending on screen size */
+    height: 100%;
+}
+
+/* The Close Button */
+.close , .close1 , .close2 , .close3 {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus , .close1:hover,
+.close1:focus  , .close2:hover,
+.close2:focus , .close3:hover,
+.close3:focus{
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal__img{
+    object-fit: contain;
+    margin: 2rem;
+    width: 100%;
+    height: 80%;
+}
+
+
+.maat{
+  font-family: sans-serif;
+}
+    
+
+
+
+
+
+
+
+  .collectionList {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    gap: 4rem;
+    flex-wrap: wrap;
+    
+
+}
+
+
+
+
+
+a>button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    border: none;
+    background-color: black;
+}
+
+
+ 
+
+
+  button:hover{
+    cursor: pointer;
+  }
+
+
+ .cover{
+    display: flex;
+    align-items: last baseline;
+    justify-content: flex-start;
+    position: relative;
+    bottom: calc(100% + 5px);
+    height: 100%;
+
+ }
+
+  .collectionsimg>img{
+    width: 100%;;
+    height: 100%;
+    object-fit: contain;
+  }
+
+  .collectionsimg{
+    box-shadow: 0.5rem 0rem 3rem 0rem lightgrey;
+    object-fit:none;
+    width: 40rem;
+    height: 60rem;
+    margin: 2rem;
+  }
+
+
+ img{
+  transition: transform .5s ;
+ }
+
+
+  img:hover{
+    transform: scale(1.1);
+  }
+
+
+
+.collections  {
+    width: 100%;
+    padding: 4rem;
+    
+}
+
+.prijs{
+  font-size: 2rem;
+    font-family: "JetBrains Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    width: 100%;
+    background-color: rgb(233,195,183);
+    opacity: 0.5;
+}
+
+
+
+
+.footer{
+    margin-top: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    font-size: 2rem;
+    font-family: "JetBrains Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    background-color: rgb(233,195,183);
+    width: 100%;
+    height: 25rem
+}
+
+
+.footer>h1{
+    margin: 10rem;
+    display: flex;
+    align-items: end;
+    justify-content: end    ;
+}
+
+.footer>ul{
+    margin: 60%;
+    font-size: 1.5rem;
+}
+
+
