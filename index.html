@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="description" content="Ontdek de nieuwste modetrends bij Sweety Bag's . Shop stijlvolle dames- en herenkleding, schoenen en accessoires. Gratis verzending vanaf €50. Unieke items voor elke gelegenheid!">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -11,7 +12,8 @@
         href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Freeman&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Sevillana&display=swap"
         rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="/img/spongebobpants.webp">
-    <script src="main.js"></script>
+    <script src="main.js" defer></script>
+    <script src="darkmode.js" defer></script>
     <!-- hier onder is de lib van icons -->
     <script src='./all.min.js' crossorigin='anonymous'></script>
     <title>Sweety Bag</title>
@@ -19,13 +21,11 @@
 
 
 <body>
+    <main>
     <header class="header">
         
         <button class="logo"> Sweety Bag's</button>
-        <section class="searchbar">
-            <input id="js--searchbar" type="text" placeholder="Search here..." class="searchbar__input">
-            <i class="fa-solid fa-magnifying-glass searchbar__glass"></i>
-        </section>
+
 
         <a href="acount.html">
             <button id="user" class="fa-solid fa-user"></button>
@@ -33,12 +33,20 @@
         <a href="shoppingkart.html">
             <button id="shoppingcart" class="fa-solid fa-cart-shopping fa-bounce"></button>
         </a>
+        <!-- dark mode -->
+        <label for="mode">
+            <input type="checkbox" name="" id="mode" class="dashboardHeader__mode">
+        </label>
 
+        
     </header>
-
+    
     <div class="nav">
-        <button class="About"> About </button>
-    </div>
+        <a href="index.html" class="select"> Home</a>
+        <a href="shoes.html" > Shoes </a>
+        <a href="pants.html" >Pants</a>
+        <a href="sweater.html">Sweater</a>
+    </div>  
 
     <section class="Hero">
         <div class="image-container">
@@ -108,7 +116,7 @@
 
 
 
-                <div class="collectionsimg">
+                <div class="collectionsimg largeimg" >
                     <img class="onderbroekimg" src="img/onderbroek.jpg" alt="">
                     <div class="cover">
                         <div class="cover-text-big">
@@ -130,14 +138,15 @@
 
     </section>
 
+</main>
     <footer>
+        
         <div class="footer">
             <h1> Sweety Bag's</h1>
             <ul>
-                <a href=""> About</a>
-                <a>Contact</a>
-                <a>Location</a>
-                <a>Donation's</a>
+                <a href="" > About </a>
+                <a href="" onclick="alert('Call 0674392542')">Contact</a>
+                <a href="https://www.google.com/maps/place/Sweety/@42.68055,26.31881,15z/data=!4m6!3m5!1s0x40a6278e172d67c5:0xab6469d3bf5cfe87!8m2!3d42.6805499!4d26.3188096!16s%2Fg%2F11sfpw0n2_?hl=nl&entry=ttu">Location</a>
             </ul>
             <iframe class="Maps"
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2933.0940588538065!2d26.31622931198664!3d42.680549871044725!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40a6278e172d67c5%3A0xab6469d3bf5cfe87!2sSweety!5e0!3m2!1snl!2snl!4v1716919957125!5m2!1snl!2snl"
@@ -145,7 +154,9 @@
                 referrerpolicy="no-referrer-when-downgrade"></iframe>
 
         </div>
+    
     </footer>
+
 </body>
 
 </html>
